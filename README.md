@@ -21,7 +21,8 @@ Uses bash to copy files to build directory and generate new project directory.
 3. Create new project 
 
     ```bash
-    ./EJS-Scss-WebStorm-Template/new-project.sh "New Project Name"
+    cd EJS-Scss-WebStorm-Template/
+    ./new-project.sh "New Project Name"
     ```
     
 4. Open new project using WebStorm
