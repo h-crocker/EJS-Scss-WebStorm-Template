@@ -2,7 +2,7 @@
 
 A template using WebStorm file watchers to compile Scss and EJS and move assets to build directory. 
 
-Uses bash to copy files to build directory. Could be adjusted to work on Windows without installing Bash or WSL by adjusting File Watchers prefixed with "Copy".
+Uses bash to copy files to build directory and generate new project directory.
 
 ## Usage
 
@@ -18,7 +18,13 @@ Uses bash to copy files to build directory. Could be adjusted to work on Windows
     git clone https://github.com/h-crocker/EJS-Scss-WebStorm-Template.git
     ```
 
-3. Open project directory with WebStorm
+3. Create new project 
 
-4. Navigate to "Settings -> Tools -> File Watchers" and adjust each watcher to point to the correct command for Sass, ejs-cli, and bash
+    ```bash
+    ./EJS-Scss-WebStorm-Template/new-project.sh "New Project Name"
+    ```
+    
+4. Open new project using WebStorm
+
+5. If needed navigate to "Settings -> Tools -> File Watchers" and adjust each watcher to point to the correct command for Sass, ejs-cli, and bash
 
