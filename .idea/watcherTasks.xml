@@ -22,14 +22,14 @@
       <envs />
     </TaskOptions>
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="--base-dir src/ &quot;$FileName$&quot; --out build/ --options src/options.json" />
+      <option name="arguments" value="--base-dir src/ &quot;*.ejs&quot; --out build/ --options src/options.json" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
-      <option name="exitCodeBehavior" value="ALWAYS" />
+      <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="ejs" />
       <option name="immediateSync" value="true" />
       <option name="name" value="Compile EJS" />
-      <option name="output" value="build/$FileNameWithoutExtension$.html" />
+      <option name="output" value="build/" />
       <option name="outputFilters">
         <array />
       </option>
@@ -97,6 +97,26 @@
       <option name="program" value="/usr/bin/bash" />
       <option name="runOnExternalChanges" value="true" />
       <option name="scopeName" value="SCSS Source Dir" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$ProjectFileDir$" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="--base-dir src/ &quot;*.ejs&quot; --out build/ --options src/options.json" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="json" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="Compile EJS - options.json" />
+      <option name="output" value="build/" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="/usr/bin/ejs-cli" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="Source Dir" />
       <option name="trackOnlyRoot" value="false" />
       <option name="workingDir" value="$ProjectFileDir$" />
       <envs />
