@@ -9,4 +9,5 @@ sed -i "s/EJS-Scss-WebStorm-Template/$1/g" .idea/*.xml
 rm LICENSE
 rm README.md
 rm new-project.sh
+echo "build/" >> .gitignore
 git init
